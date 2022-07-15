@@ -30,7 +30,7 @@ services:
     build: .
     environment:
       DATABASE_USER: root
-      DATABASE_PASSWORD: root
+      DATABASE_PASS: root
       DATABASE_NAME: my_db
       DATABASE_PORT: 5432
       WORKER_CLASS: uvicorn.workers.UvicornH11Worker
