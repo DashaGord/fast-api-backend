@@ -42,7 +42,7 @@ def getAvailableRooms(date_in, date_out, price_from, price_to, bedrooms, beds, b
     GROUP BY h.id
     HAVING COUNT(h.id) = {getDateDiff(date_in, date_out)} AND round(avg(price)) BETWEEN {price_from} AND {price_to}
     ORDER BY h.id
-    OFFSET {offset} ROWS FETCH NEXT 20 ROWS ONLY
+    OFFSET {offset} ROWS FETCH NEXT 12 ROWS ONLY
     """
 
     count = 0
